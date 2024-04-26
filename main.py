@@ -24,6 +24,8 @@ pd.set_option('display.max_columns', 8)
 # this variable determine the name of subFolder that CSVs wiil be saved inside that.
 sub_folder_CSVs_store_location = 'Yahoo_Finance_CSV'
 
+# API keys
+CoinMarketCap_API_Key = ''
 
 
 # <---------------------- Start: The Core Program ----------------------->
@@ -46,7 +48,7 @@ def save_top_500_crypto_names():
     }
     headers = {
         'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': 'fe8952c1-2b22-40f5-ad0d-17ace1dce876',
+        'X-CMC_PRO_API_KEY': CoinMarketCap_API_Key,
     }
 
     session = Session()
